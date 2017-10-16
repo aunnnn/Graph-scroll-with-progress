@@ -1,0 +1,75 @@
+body {  
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.sections {
+  box-sizing: border-box;
+  width: 40%;
+  padding: 8px;
+}
+
+.sections > div {
+  /* height: 80vh; */
+  background: rgb(199, 231, 199);
+  margin-bottom: 18px;
+  opacity: 0.3;
+}
+
+.sections > div:last-child {
+  /* min-height: 400px; */
+}
+
+.graph {
+  box-sizing: border-box;
+  left: 40%;
+  width: 60%;
+  position: absolute;
+  padding: 8px;
+  top: 0;
+  bottom: auto;
+  right: auto;
+  height: 100vh;
+}
+
+#c1 .graph {
+  background: yellow;
+}
+
+#c2 .graph {
+  background: orange;
+}
+
+.graph-scroll-fixed .graph {
+  position: fixed;
+}
+
+.graph-scroll-below .graph {
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  right: 0;
+  height: 100vh;
+}
+
+#c1.graph-scroll-below .graph {
+  background: blue;
+}
+
+#c2.graph-scroll-below .graph {
+  background: cornflowerblue;
+}
+
+.sections > .graph-scroll-active {
+  opacity: 1.0;
+}
+
+#dummy {
+  height: 600px;
+  background: red;
+}

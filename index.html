@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="js/d3.min.js"></script>
+  <script src="js/graph-scroll.js"></script>
+  <link rel="stylesheet" href="css/index.css">
+  <title>Try graph scroll</title>
+</head>
+<body>
+  <!-- <div id="debug" style="position: absolute; left: 0; height: 10px; background: pink;">---------1</div> -->
+  <!-- <div id="debug2" style="position: absolute; left: 0; height: 10px; background: blue;">---------2</div> -->
+  <div style="height: 300px; background: rgb(197, 197, 221)">
+    <h1>Graph-scroll with Progress</h1>
+    <p>offset = 200 </p>
+  </div>
+  <div id="c1" class="container">
+
+    <div class="graph">
+      <div>Scroll</div>
+      <p>wow</p>
+      <p id="description"></p>
+    </div>
+
+    <h2>Section 1</h2>
+    <div class='sections'>
+      <div> 
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ullamcorper tempus sem, non consectetur nisi finibus ac. Maecenas suscipit mattis turpis et tristique. Phasellus lectus dolor, fermentum eget rutrum a, feugiat sed tellus. Vivamus convallis nec nulla vitae volutpat. Etiam ullamcorper nisl in justo pulvinar, at tincidunt odio ullamcorper. Donec posuere lobortis lacus ut scelerisque. Nullam a sodales magna. Phasellus nec odio arcu. Etiam sollicitudin nec velit id mollis. Vestibulum fringilla, nunc ut mollis interdum, sem risus semper nisl, vel faucibus purus turpis quis diam. Morbi vitae dolor vestibulum, iaculis eros quis, tristique justo. Pellentesque eu libero ultrices tellus consectetur tempor. Mauris pulvinar felis augue, at dapibus nulla facilisis sit amet. Nunc vitae hendrerit metus. Suspendisse dignissim quam at auctor imperdiet.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ullamcorper tempus sem, non consectetur nisi finibus ac. Maecenas suscipit mattis turpis et tristique. Phasellus lectus dolor, fermentum eget rutrum a, feugiat sed tellus. Vivamus convallis nec nulla vitae volutpat. Etiam ullamcorper nisl in justo pulvinar, at tincidunt odio ullamcorper. Donec posuere lobortis lacus ut scelerisque. Nullam a sodales magna. Phasellus nec odio arcu. Etiam sollicitudin nec velit id mollis. Vestibulum fringilla, nunc ut mollis interdum, sem risus semper nisl, vel faucibus purus turpis quis diam. Morbi vitae dolor vestibulum, iaculis eros quis, tristique justo. Pellentesque eu libero ultrices tellus consectetur tempor. Mauris pulvinar felis augue, at dapibus nulla facilisis sit amet. Nunc vitae hendrerit metus. Suspendisse dignissim quam at auctor imperdiet.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ullamcorper tempus sem, non consectetur nisi finibus ac. Maecenas suscipit mattis turpis et tristique. Phasellus lectus dolor, fermentum eget rutrum a, feugiat sed tellus. Vivamus convallis nec nulla vitae volutpat. Etiam ullamcorper nisl in justo pulvinar, at tincidunt odio ullamcorper. Donec posuere lobortis lacus ut scelerisque. Nullam a sodales magna. Phasellus nec odio arcu. Etiam sollicitudin nec velit id mollis. Vestibulum fringilla, nunc ut mollis interdum, sem risus semper nisl, vel faucibus purus turpis quis diam. Morbi vitae dolor vestibulum, iaculis eros quis, tristique justo. Pellentesque eu libero ultrices tellus consectetur tempor. Mauris pulvinar felis augue, at dapibus nulla facilisis sit amet. Nunc vitae hendrerit metus. Suspendisse dignissim quam at auctor imperdiet.</p>
+      </div>
+      <div>
+        <p>Praesent ut turpis sed orci cursus pharetra. Sed imperdiet sem at odio vulputate, ut mollis sem porta. Mauris tempor porta lorem, at suscipit felis fringilla sit amet. Mauris feugiat neque eget mi aliquam pellentesque. Aenean augue est, tincidunt at justo eget, pretium ultrices dolor. Cras nec nisl metus. Etiam venenatis id turpis ac consectetur. In a rhoncus arcu, blandit sodales nulla.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ullamcorper tempus sem, non consectetur nisi finibus ac. Maecenas suscipit mattis turpis et tristique. Phasellus lectus dolor, fermentum eget rutrum a, feugiat sed tellus. Vivamus convallis nec nulla vitae volutpat. Etiam ullamcorper nisl in justo pulvinar, at tincidunt odio ullamcorper. Donec posuere lobortis lacus ut scelerisque. Nullam a sodales magna. Phasellus nec odio arcu. Etiam sollicitudin nec velit id mollis. Vestibulum fringilla, nunc ut mollis interdum, sem risus semper nisl, vel faucibus purus turpis quis diam. Morbi vitae dolor vestibulum, iaculis eros quis, tristique justo. Pellentesque eu libero ultrices tellus consectetur tempor. Mauris pulvinar felis augue, at dapibus nulla facilisis sit amet. Nunc vitae hendrerit metus. Suspendisse dignissim quam at auctor imperdiet.</p>
+      </div>
+      <div> 
+        <p><strong>Last Section</strong></p>
+        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ullamcorper tempus sem, non consectetur nisi finibus ac. Maecenas suscipit mattis turpis et tristique. Phasellus lectus dolor, fermentum eget rutrum a, feugiat sed tellus. Vivamus convallis nec nulla vitae volutpat. Etiam ullamcorper nisl in justo pulvinar, at tincidunt odio ullamcorper. Donec posuere lobortis lacus ut scelerisque. Nullam a sodales magna. Phasellus nec odio arcu. Etiam sollicitudin nec velit id mollis. Vestibulum fringilla, nunc ut mollis interdum, sem risus semper nisl, vel faucibus purus turpis quis diam. Morbi vitae dolor vestibulum, iaculis eros quis, tristique justo. Pellentesque eu libero ultrices tellus consectetur tempor. Mauris pulvinar felis augue, at dapibus nulla facilisis sit amet. Nunc vitae hendrerit metus. Suspendisse dignissim quam at auctor imperdiet.</p> -->
+        <p style="height: 80vh;">Notice the progress is faster.</p>        
+      </div>      
+    </div>
+  </div>
+  <div id="c2" class="container">
+    <h2>Section 2</h2>
+    <div class="graph">
+      <div>Graph2</div>
+      <p>Wow</p>
+    </div>
+    <div class='sections'>
+      <div> 
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ullamcorper tempus sem, non consectetur nisi finibus ac. Maecenas suscipit mattis turpis et tristique. Phasellus lectus dolor, fermentum eget rutrum a, feugiat sed tellus. Vivamus convallis nec nulla vitae volutpat. Etiam ullamcorper nisl in justo pulvinar, at tincidunt odio ullamcorper. Donec posuere lobortis lacus ut scelerisque. Nullam a sodales magna. Phasellus nec odio arcu. Etiam sollicitudin nec velit id mollis. Vestibulum fringilla, nunc ut mollis interdum, sem risus semper nisl, vel faucibus purus turpis quis diam. Morbi vitae dolor vestibulum, iaculis eros quis, tristique justo. Pellentesque eu libero ultrices tellus consectetur tempor. Mauris pulvinar felis augue, at dapibus nulla facilisis sit amet. Nunc vitae hendrerit metus. Suspendisse dignissim quam at auctor imperdiet.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ullamcorper tempus sem, non consectetur nisi finibus ac. Maecenas suscipit mattis turpis et tristique. Phasellus lectus dolor, fermentum eget rutrum a, feugiat sed tellus. Vivamus convallis nec nulla vitae volutpat. Etiam ullamcorper nisl in justo pulvinar, at tincidunt odio ullamcorper. Donec posuere lobortis lacus ut scelerisque. Nullam a sodales magna. Phasellus nec odio arcu. Etiam sollicitudin nec velit id mollis. Vestibulum fringilla, nunc ut mollis interdum, sem risus semper nisl, vel faucibus purus turpis quis diam. Morbi vitae dolor vestibulum, iaculis eros quis, tristique justo. Pellentesque eu libero ultrices tellus consectetur tempor. Mauris pulvinar felis augue, at dapibus nulla facilisis sit amet. Nunc vitae hendrerit metus. Suspendisse dignissim quam at auctor imperdiet.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ullamcorper tempus sem, non consectetur nisi finibus ac. Maecenas suscipit mattis turpis et tristique. Phasellus lectus dolor, fermentum eget rutrum a, feugiat sed tellus. Vivamus convallis nec nulla vitae volutpat. Etiam ullamcorper nisl in justo pulvinar, at tincidunt odio ullamcorper. Donec posuere lobortis lacus ut scelerisque. Nullam a sodales magna. Phasellus nec odio arcu. Etiam sollicitudin nec velit id mollis. Vestibulum fringilla, nunc ut mollis interdum, sem risus semper nisl, vel faucibus purus turpis quis diam. Morbi vitae dolor vestibulum, iaculis eros quis, tristique justo. Pellentesque eu libero ultrices tellus consectetur tempor. Mauris pulvinar felis augue, at dapibus nulla facilisis sit amet. Nunc vitae hendrerit metus. Suspendisse dignissim quam at auctor imperdiet.</p>
+      </div>
+      <div> 
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ullamcorper tempus sem, non consectetur nisi finibus ac. Maecenas suscipit mattis turpis et tristique. Phasellus lectus dolor, fermentum eget rutrum a, feugiat sed tellus. Vivamus convallis nec nulla vitae volutpat. Etiam ullamcorper nisl in justo pulvinar, at tincidunt odio ullamcorper. Donec posuere lobortis lacus ut scelerisque. Nullam a sodales magna. Phasellus nec odio arcu. Etiam sollicitudin nec velit id mollis. Vestibulum fringilla, nunc ut mollis interdum, sem risus semper nisl, vel faucibus purus turpis quis diam. Morbi vitae dolor vestibulum, iaculis eros quis, tristique justo. Pellentesque eu libero ultrices tellus consectetur tempor. Mauris pulvinar felis augue, at dapibus nulla facilisis sit amet. Nunc vitae hendrerit metus. Suspendisse dignissim quam at auctor imperdiet.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ullamcorper tempus sem, non consectetur nisi finibus ac. Maecenas suscipit mattis turpis et tristique. Phasellus lectus dolor, fermentum eget rutrum a, feugiat sed tellus. Vivamus convallis nec nulla vitae volutpat. Etiam ullamcorper nisl in justo pulvinar, at tincidunt odio ullamcorper. Donec posuere lobortis lacus ut scelerisque. Nullam a sodales magna. Phasellus nec odio arcu. Etiam sollicitudin nec velit id mollis. Vestibulum fringilla, nunc ut mollis interdum, sem risus semper nisl, vel faucibus purus turpis quis diam. Morbi vitae dolor vestibulum, iaculis eros quis, tristique justo. Pellentesque eu libero ultrices tellus consectetur tempor. Mauris pulvinar felis augue, at dapibus nulla facilisis sit amet. Nunc vitae hendrerit metus. Suspendisse dignissim quam at auctor imperdiet.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ullamcorper tempus sem, non consectetur nisi finibus ac. Maecenas suscipit mattis turpis et tristique. Phasellus lectus dolor, fermentum eget rutrum a, feugiat sed tellus. Vivamus convallis nec nulla vitae volutpat. Etiam ullamcorper nisl in justo pulvinar, at tincidunt odio ullamcorper. Donec posuere lobortis lacus ut scelerisque. Nullam a sodales magna. Phasellus nec odio arcu. Etiam sollicitudin nec velit id mollis. Vestibulum fringilla, nunc ut mollis interdum, sem risus semper nisl, vel faucibus purus turpis quis diam. Morbi vitae dolor vestibulum, iaculis eros quis, tristique justo. Pellentesque eu libero ultrices tellus consectetur tempor. Mauris pulvinar felis augue, at dapibus nulla facilisis sit amet. Nunc vitae hendrerit metus. Suspendisse dignissim quam at auctor imperdiet.</p>
+      </div>
+      <div style="height: 30vh;">30 vg</div>
+    </div>
+  </div>
+  </div>
+  <div id="dummy">
+    Footer
+  </div>
+</body>
+<script src="js/index.js"></script>
+</html>
